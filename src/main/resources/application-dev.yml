@@ -1,0 +1,37 @@
+spring:
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://localhost:3306/temi?useSSL=false&serverTimezone=Asia/Seoul&allowPublicKeyRetrieval=true&characterEncoding=UTF-8
+    username: root
+    password: 1234
+  redis:
+    port: 6379
+    host: localhost
+  servlet:
+    multipart:
+      max-file-size: 500MB
+      max-request-size: 500MB
+server:
+  port: 8000
+jwt:
+  accessSecret: zdeRaZg/EiMrAVuOX6pZeU5cdas5VqExPhTGje3dzIw=
+  refreshSecret: 3Koh9ZqwkJOkjTSe1Y9k+r1gnTo8C5gPlAckjufNQYQ=
+cloud:
+  aws:
+    stack:
+      auto: false
+    s3:
+      bucket: aid-boss
+      url: https://aid-boss.s3.ap-northeast-2.amazonaws.com/
+    region:
+      static: ap-northeast-2
+      auto: false
+    credentials:
+      access-Key: AKIAYP3F5VRCNBIDIZOW
+      secret-Key: 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
+logging:
+  level:
+    com:
+      amazons:
+        util:
+          EC2MetadataUtils: error

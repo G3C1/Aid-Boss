@@ -1,4 +1,4 @@
-package com.g3c1.aidboss.domain.image.Exception
+package com.g3c1.aidboss.domain.image.exception
 
 import com.g3c1.aidboss.global.error.exception.BasicException
 import com.g3c1.aidboss.global.error.type.ErrorCode

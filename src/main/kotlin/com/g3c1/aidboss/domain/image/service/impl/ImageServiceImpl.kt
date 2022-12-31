@@ -5,7 +5,7 @@ import com.amazonaws.services.s3.AmazonS3
 import com.amazonaws.services.s3.model.CannedAccessControlList
 import com.amazonaws.services.s3.model.ObjectMetadata
 import com.amazonaws.services.s3.model.PutObjectRequest
-import com.g3c1.aidboss.domain.image.Exception.FailUploadImageException
+import com.g3c1.aidboss.domain.image.exception.FailUploadImageException
 import com.g3c1.aidboss.domain.image.presentation.data.dto.ImageDto
 import com.g3c1.aidboss.domain.image.service.ImageService
 import org.springframework.beans.factory.annotation.Value
